@@ -1,8 +1,8 @@
-    - task: CopyFiles@2
-      inputs:
-        SourceFolder: '$(build.sourcesDirectory)'
-        Contents: |
-          **/*.js
-          **/*.json
-          **/*.config
-        TargetFolder: '$(build.ArtifactStagingDirectory)'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(build.sourcesDirectory)'
+    Contents: |
+      **/*.js
+      **/*.json
+      **/*.config
+    TargetFolder: '$(build.ArtifactStagingDirectory)'
