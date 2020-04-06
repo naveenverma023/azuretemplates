@@ -1,8 +1,8 @@
 steps:
 - task: CmdLine@2
   displayName: Lint the dockerfile 
-    inputs:
-      script: |
-        wget https://github.com/iamabhishek-dubey/dockerlinter/releases/download/v0.0.2/dockerlinter-0.0.2-linux-amd64.tar.gz
-        tar -xvzf dockerlinter-0.0.2-linux-amd64.tar.gz
-        ./dockerlinter Dockerfile
+  inputs:
+    script: |
+      wget https://github.com/iamabhishek-dubey/dockerlinter/releases/download/v0.0.2/dockerlinter-0.0.2-linux-amd64.tar.gz
+      tar -xvzf dockerlinter-0.0.2-linux-amd64.tar.gz
+      ./dockerlinter Dockerfile
