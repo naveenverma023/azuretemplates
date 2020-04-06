@@ -1,0 +1,10 @@
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Free Trial (5fd12ab7-553a-42fc-a678-189ccbd609ed)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az acr login --name acrpipedemo
+      docker pull acrpipedemo.azurecr.io/nodejademo:$(tag)
+      docker run -itd -p 80:1773 acrpipedemo.azurecr.io/nodejademo:$(tag)

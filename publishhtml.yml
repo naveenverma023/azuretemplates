@@ -1,0 +1,6 @@
+steps:
+- task: publishHtml@1
+  displayName: Publish HTML reports
+  inputs:
+    artifactName: 'result.html'
+    htmlFilePath: '/home/vsts/work/1/s/result.html'
