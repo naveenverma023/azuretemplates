@@ -1,0 +1,9 @@
+steps:
+- task: AzureFileCopy@4
+  displayName: Push the static web files to azure blob
+  inputs:
+   SourcePath: '$(build.ArtifactStagingDirectory)'
+   azureSubscription: 'Free Trial (5fd12ab7-553a-42fc-a678-189ccbd609ed)'
+   Destination: 'AzureBlob'
+   storage: 'winagentrgdiag'
+   ContainerName: 'cdndemoblob'
