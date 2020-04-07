@@ -6,5 +6,5 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       az acr login --name acrpipedemo
-      docker pull acrpipedemo.azurecr.io/nodejademo:$(tag)
-      docker run -itd -p 80:1773 acrpipedemo.azurecr.io/nodejademo:$(tag)
+      docker pull acrpipedemo.azurecr.io/nodejsdemo:$(tag)
+      docker run -itd -p 80:1773 acrpipedemo.azurecr.io/nodejsdemo:$(tag)
